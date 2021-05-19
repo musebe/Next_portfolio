@@ -1,4 +1,4 @@
-function HomePage() {
+function PostDetailPage() {
     return (
         <div>
             Enter
@@ -6,4 +6,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default PostDetailPage;
