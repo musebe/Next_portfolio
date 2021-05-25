@@ -1,3 +1,4 @@
+import PostsGrid from '../posts/posts-grid';
 import styles from '@/styles/featured-posts.module.css';
 
 function FeaturedPosts(props) {

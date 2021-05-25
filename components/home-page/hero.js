@@ -19,6 +19,7 @@ function Hero() {
         Kenya. Am constantly learning new technologies so that i can teach
         others.
       </p>
+
     </section>
   );
 }

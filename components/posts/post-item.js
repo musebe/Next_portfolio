@@ -11,17 +11,26 @@ function PostItem(props) {
     year: 'numeric',
   });
 
+  const imagePath = `/images/posts/${slug}/${image}`;
+  const linkPath = `/posts/${slug}`;
+
   return (
     <li className={styles.post}>
       <Link href={linkPath}>
         <a>
           <div className={styles.image}>
-            <Image />
+            <Image
+              src={imagePath}
+              alt={title}
+              width={300}
+              height={200}
+              layout='responsive'
+            />
           </div>
           <div className={styles.content}>
             <h3>{title}</h3>
-            <time>July 13th 2022</time>
-            <p>The excerpt </p>
+            <time>{formattedDate}</time>
+            <p>{excerpt}</p>
           </div>
         </a>
       </Link>
